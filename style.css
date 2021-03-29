@@ -43,12 +43,12 @@ button a:hover {
 }
 
 .background { 
-    background-color: blue; 
+    background-color: #34568B; 
     animation: background 5s 1; /* CSS3 */
 } 
 
 footer {
-    background-color: green;
+    background-color: #A0DAA9;
     font-size: 20px;
     padding: 15px 32px;
     margin-bottom: 0%;
@@ -56,7 +56,7 @@ footer {
 
 @keyframes background { /* CSS3 */
     0%, 50% {top:0px; bottom:0px; background: black;}
-    100% {top:500px; left:0px; background:blue;}
+    100% {top:500px; left:0px; background:#34568B;}
 } 
 
 .sun {
@@ -70,8 +70,8 @@ footer {
 }
 
 @keyframes move { /* CSS3 */
-    0%, 50% {top:400px; left:0px; background:yellow;}
-    100% {top:0px; left:0px; background: yellow;}
+    0%, 50% {top:400px; left:0px; background: #EFC050;}
+    100% {top:0px; left:0px; background: #EFC050;}
 }
 
 
