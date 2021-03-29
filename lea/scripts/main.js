@@ -1,5 +1,5 @@
 let myButton = document.querySelector('button');
-let myHeading = document.querySelector('h1');
+let myHeading = document.querySelector('h4');
 
 function setUserName() {
     let myName = prompt('Veuillez saisir votre nom.');
