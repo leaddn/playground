@@ -10,7 +10,7 @@ Or write something else-->
 
 # Installation
 
-# TEch / framework used
+# Tech / framework used
 
 # Features
 
