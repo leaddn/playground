@@ -2,7 +2,7 @@
 .bloc {
     display: table;
     table-layout: auto;
-    width: 80%;
+    width: 60%;
     -webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
 	border-style: solid;
