@@ -3,13 +3,14 @@
     display: table;
     table-layout: auto;
     width: 80%;
-    -webkit-border-radius: 20px;
-	-moz-border-radius: 20px;
+    -webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
 	border-style: solid;
     border-color: #1affff;
-    border-width: 30px; 
-    margin: 20px;
+    border-width: 1px; 
+    margin: 4px;
 }
+
 
 h1 {
     color: white;
