@@ -1,3 +1,16 @@
+
+.bloc {
+    display: table;
+    table-layout: auto;
+    width: 80%;
+    -webkit-border-radius: 8%;
+	-moz-border-radius: 8%;
+	border-style: solid;
+    border-color: #1affff;
+    border-width: 1%; 
+    margin: 4%;
+}
+
 h1 {
     color: white;
     font-size: 90%; 
