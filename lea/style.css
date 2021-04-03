@@ -7,26 +7,19 @@ h1 {
     
 }
 
+h2 {
+  text-align: center;
+}
+
 h4 {
     color: white;
 }
 
-container {
+.sharebuttons_container {
   display: flex;
-  
-}
-
-.container1 {
   flex-direction: row;
   width: 300px;
   height: 90px;
-}
-
-.container2 {
-  flex-direction: column;
-  width: fit-content;
-  height: 300px;
-  justify-content: space-around;
 }
 
 .container3 {
@@ -41,7 +34,9 @@ container {
 
 .about {
   flex: 1;
-  min-width: 25%;
+  min-width: 40%;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
 .work {
@@ -52,21 +47,12 @@ container {
   flex: 1;
 }
 
-.item {
-  margin: 5px 10px 5px 10px;
+.sharebuttons {
+  margin: auto;
   width: auto;
-  height: 70px;
+  height: auto;
 }
 
-.item2 {
-  width: auto;
-  height: 70px;
-}
-
-
-.container, .item {
-  border-radius: 10px;
-}
 
 body {
     margin: 10;
@@ -119,16 +105,13 @@ header {
 
   section {
     background-color: #A0DAA9;
+    
     border-radius: 10px;
     width:fit-content;
     height: fit-content;
     padding: 1em;
     margin: 1em;
-    opacity: 75%;
-  }
-
-  .résumé {
-    justify-content: space-around;
+    opacity: 80%;
   }
 
 button {
@@ -160,21 +143,12 @@ button a:hover {
   
 }
 
-.share-buttons img {
-    width: 35px;
-    padding: 5px;
-    border: 0;
-    box-shadow: 0;
-    display: inline;
-    }
-
-
-
 
 img.hublot {
-    height: 4em;
-    width: 4em;
+    height: 6em;
+    width: 6em;
     border-radius: 50%;
+    object-fit: cover;
 }
 
 
@@ -204,12 +178,11 @@ div {
 .timeline::after {
   content: '';
   position: absolute;
-  width: 0.5em;
+  width: 0.3em;
   background-color: grey;
   top: 0;
   bottom: 0;
   left: 0%;
-  
 }
 
 /* Container around content */
@@ -226,7 +199,7 @@ div {
   position: absolute;
   width: 25px;
   height: 25px;
-  right: -17px;
+  /*right: -17px;*/
   background-color: aquamarine;
   border: 4px solid grey;
   top: 5%;
