@@ -25,12 +25,11 @@ button {
     border-radius: 5%;
     display: inline-block;
     text-decoration: none;
-    padding: 1em 1em;
+    padding: 1em 0em;
     text-align: center;
     margin-top: 2em;
     margin-bottom: 2em;
     width: auto;
-  
 }
   button a{
     color: black;
@@ -80,20 +79,20 @@ footer {
 
 .sun {
     background: #EFC050;
-    width: 95%;
-    height: 95%; 
+    width: 3em;
+    height: 3em; 
     border-radius: 80%;
     animation:
         move 5s 1;
-    position:relative; 
-    margin-left: 60%;
+    position: relative; 
+    margin-left: 5em;
 }
 
 /* Sun effect */
 
 @keyframes move { 
-    0%, 50% {top:200%; left:0%;}
-    100% {top:0%; left:0%;}
+    0%, 50% {top:20em; left:0em;}
+    100% {top:0em; left:0em;}
 }
 
 

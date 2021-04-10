@@ -40,10 +40,16 @@ h4 {
 }
 
 .work {
+  min-width: 40%;
+  height: 20em;
+  overflow: scroll;
   flex: 1;
 }
 
 .education {
+  min-width: 40%;
+  height: 20em;
+  overflow: scroll;
   flex: 1;
 }
 
@@ -163,6 +169,7 @@ div {
     font-size: 40px; 
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
+    margin-bottom: 5em;
 }
 
 
