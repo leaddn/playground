@@ -41,6 +41,7 @@ h4 {
 
 .work {
   min-width: 40%;
+  max-width: fit-content;
   height: 20em;
   overflow: scroll;
   flex: 1;
@@ -48,6 +49,7 @@ h4 {
 
 .education {
   min-width: 40%;
+  max-width: fit-content;
   height: 20em;
   overflow: scroll;
   flex: 1;
