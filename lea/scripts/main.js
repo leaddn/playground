@@ -7,12 +7,13 @@ function setUserName() {
     myHeading.textContent = `What are you doing here ${myName} ?`;
   }
 
-  if (!localStorage.getItem('nom')) {
-    setUserName();
-  } else {
-    let storedName = localStorage.getItem('nom');
-    myHeading.textContent = `What are you doing here ${storedName} ?`;
-  }
+
+   if (!localStorage.getItem('nom')) {
+     setUserName();
+   } else {
+     let storedName = localStorage.getItem('nom');
+     myHeading.textContent = `What are you doing here ${storedName} ?`;
+   }
 
   myButton.addEventListener('click', function() {
     setUserName();
