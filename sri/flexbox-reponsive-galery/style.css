@@ -24,7 +24,7 @@ h1{
     width: 80%;
     max-width: 900px;
     margin: 80px auto 0;
-    background: crimson;
+    /* background: crimson; */
 }
 
 .item{
