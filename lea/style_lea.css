@@ -1,14 +1,88 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat';
+  height: auto;
+  width: auto;
+    /*background-image: url('./img/1560285.jpeg');
+    background-color: #333;
+    background-repeat: no-repeat;
+    background-size: cover;*/
+  background-color: #2F3B4B;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  background-image: url('./img/1560285.jpeg');
+  height: auto;
+  width: auto;
+  text-align: center;
+} 
+
+footer {
+  text-align: center;
+  color: #FFFFFF;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  background-color: #333;
+  width: auto;
+
+}
+
+nav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+@media only screen and (max-width: 500px) {
+
+  nav {
+    flex-direction: column;
+  }
+}
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+nav a:active {
+  background-color: royalblue;
+  color: white;
+}
+
+
+
+nav-right {
+  float: right;
+}
+
 h1 {
-    color: white; 
-    font-size: 90px; 
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #FFFFFF; 
+    /*font-size: 90px;*/
+    /*font-family: 'Montserrat', sans-serif;*/
     text-align: center;
     border-radius: 100px;
-    
+    background-color: rgba(45, 45, 45, 0.1);
+}
+
+hr {
+  width: 25%;
+  height: 5px;
+  text-align: left;
+  background-color: #A0DAA9;
+  border: none;
 }
 
 h2 {
   text-align: center;
+  color: #FFFFFF;
 }
 
 h4 {
@@ -18,9 +92,19 @@ h4 {
 .sharebuttons_container {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   width: 300px;
-  height: 90px;
+  height: auto;
+  margin-top: 1em;
+  align-items: center;
 }
+
+.sharebuttons {
+  /*margin: auto;*/
+  width: 2em;
+  height: auto;
+}
+
 
 .container3 {
   display: flex;
@@ -30,13 +114,20 @@ h4 {
 
 .contact {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .about {
   flex: 1;
   min-width: 40%;
+  
+  
+  /*
   padding-left: 2em;
-  padding-right: 2em;
+  padding-right: 2em;*/
 }
 
 .work {
@@ -55,94 +146,49 @@ h4 {
   flex: 1;
 }
 
-.sharebuttons {
-  margin: auto;
-  width: auto;
-  height: auto;
+.project {
+  display: flex;
 }
 
 
-body {
-    margin: 10;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
-    height: auto;
-    width: auto;
-      background-image: url('./img/1560285.jpeg');
-      /*background-color: #333;*/
-      background-repeat: no-repeat;
-      background-size: cover;
-    
+
+ul {
+  text-align: left;
   }
 
-  ul {
-    text-align: left;
-  }
-
-header {
-  justify-content: center;
-} 
-  nav {
-    overflow: hidden;
-    background-color: #333;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
-  
-  nav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  nav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  nav a.active {
-    background-color: royalblue;
-    color: white;
-  }
-  
-  nav-right {
-    float: right;
-  }
-
-  section {
-    background-color: #A0DAA9;
-    
+section {
+    /*background-color: #A0DAA9;*/
+    background-color: #4F5256;
     border-radius: 10px;
     width:fit-content;
     height: fit-content;
     padding: 1em;
     margin: 1em;
     opacity: 80%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   }
 
 button {
-    font-family: 'Courier New', Courier, monospace;
     background-color: #333;
     color: white;
     overflow: hidden;
     border-radius: 5px;
-    display: inline-block;
     text-decoration: none;
     padding: 10px 0px;
     text-align: center;
+    border: none;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 
   button a{
+    font-family: "Montserrat";
     color: white;
     border: none;
     text-decoration: none;
     padding: 15px 32px;
     font-size: 17px; 
     text-align: center;
-    
   }
 
 button a:hover {
@@ -157,24 +203,8 @@ img.hublot {
     width: 6em;
     border-radius: 50%;
     object-fit: cover;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
-
-
-div {
-    margin-bottom: 10px;
-    border-radius: 5px;
-    padding: 12px;
-    
-}
-
-.subtitle {
-    color: white; 
-    font-size: 40px; 
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
-    margin-bottom: 5em;
-}
-
 
 
 /* The actual timeline (the vertical ruler) */
@@ -368,4 +398,14 @@ div {
   color: white;
   transform: rotateY(180deg);
 }
-/*
+*/
+.white_bg {
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  padding: 0.5em 1em 0.5em 1em;
+}
+
+.download {
+  margin-top: 1em;
+  width: auto;
+}
