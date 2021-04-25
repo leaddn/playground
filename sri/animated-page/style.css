@@ -8,7 +8,7 @@ body{
     background: #333 ;
     font-family: Arial, Helvetica, sans-serif;
     height: 80vh;
-    background: url('./images/mountainside-riverside-village.jpg');
+    background: url('./images/cat-background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -17,14 +17,14 @@ body{
 
 .container-first{
     position: absolute;
-    top: 45%;
-    left: 30%;
+    top: 25%;
+    left: 40%;
 }
 
 h1, span{
     text-transform: uppercase;
     font-size: 40px;
-    color: #433f57;
+    color: #161516;
     font-family: Abril fatface, sans-serif;
 }
 
@@ -40,7 +40,7 @@ h1, span{
     font-size: 30px;
     padding: 20px;
     width: 200px;
-    color: #363535d7;
+    color: #1a1919d7;
     cursor: pointer;
 }
 
@@ -103,13 +103,13 @@ h1, span{
     border-radius: 50%;
     border: 1px solid #f1f1f1;
     align-items: center;
-    margin: 10px 0;
+    margin: 20px 0;
     background: #f1f1f1;
     cursor: pointer;
     position: relative;
 }
 
 .logo-medias{
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
 }
