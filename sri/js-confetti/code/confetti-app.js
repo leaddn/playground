@@ -1,10 +1,6 @@
 const containerSlot= document.querySelector(".slot");
 const bntConfetti= document.querySelector(".btn-confetti");
 const emojis= ["🍰","🍑","🍙","🍚","🍜","🍻","🍨","🍣","🍤","☕","🍓"];
-const words= ["adorable", "amazing", "angel", "enchanting", "friend", "sweatheart"];
-const quotes= ["adorable", "amazing", "angel", "enchanting", "friend", "sweatheart"];
-
-
 
 bntConfetti.addEventListener("click", party);
 
@@ -20,7 +16,6 @@ function party(){
 
         confetti.innerText = emojis[Math.floor(Math.random() * emojis.length)];
         containerSlot.appendChild(confetti);
-
     }
 
     animateConfetti();
