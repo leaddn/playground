@@ -89,6 +89,11 @@ h4 {
     color: white;
 }
 
+.icone {
+  width: auto;
+  height: 1em;
+}
+
 .sharebuttons_container {
   display: flex;
   flex-direction: row;
@@ -112,7 +117,7 @@ h4 {
   flex-wrap: wrap;
 }
 
-.contact {
+.info {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -139,7 +144,7 @@ h4 {
 }
 
 .education {
-  min-width: 40%;
+  min-width: 50%;
   max-width: fit-content;
   height: 20em;
   overflow: scroll;
@@ -206,7 +211,9 @@ img.hublot {
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
-
+/* ===================================== */
+/* ===================================== */
+/* ===================================== */
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;
@@ -334,6 +341,10 @@ img.hublot {
 /* Make sure that padding behaves as expected */
 * {box-sizing:border-box}
 
+/* ==================================== */
+/* ===================================== */
+/* ===================================== */
+
 /* flip card */
 .flip-card {
   background-color: transparent;
@@ -408,4 +419,61 @@ img.hublot {
 .download {
   margin-top: 1em;
   width: auto;
+}
+
+/* CONTACT FORM */
+.contact {
+  min-width: 50%;
+}
+
+.info_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  /*padding-bottom: 1em;*/
+}
+
+.info_form img {
+  margin: 0em 1em 0em 0em;
+}
+
+.info_form input {
+  /*border: none;*/
+  height: 2em;
+  width: 50%;
+  /*background-color: #a0daa9;*/
+}
+
+.info_form input:hover {
+  background-color:#f2f2f2;
+}
+
+.info_form hr {
+  background-color: #7c7c7c;
+  width: 50%;
+  margin-left: 0%;
+  margin-top: 0%;
+}
+
+.info_form label {
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+}
+
+/* =============== */
+
+.no_border {
+  border: none;
+}
+
+.shadow {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.green {
+  background-color: #a0daa9;
+}
+
+.green_shadow {
+  background-color: #78a57f;
 }
