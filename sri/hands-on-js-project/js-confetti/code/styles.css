@@ -1,0 +1,64 @@
+/* reset page */
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(112, 109, 109, 0.877);
+    overflow: hidden; /* do not have scrollbar on side*/
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 50px;
+    color: #998cdf;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    top: 30%;
+}
+
+.confettiContainer{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-confetti{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 7px 0 rgb(224, 194, 194);
+    font-size: 30px;
+}
+
+.btn-confetti:active{
+    margin-top: 7px;
+    box-shadow: 0 7px 0 rgb(160,160,160); 
+}
+
+.slot{
+    position: relative;
+    perspective: 1000px;
+}
+
+.slot div{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+}
