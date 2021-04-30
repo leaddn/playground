@@ -1,6 +1,7 @@
 $grey-dark: #2F3B4B;
 $grey-light: #4F5256;
 $white: #f2f2f2;
+$lavender: #d4dcff;
 $black: #333;
 $water-green: #A0DAA9;
 
@@ -16,7 +17,7 @@ body {
     background-color: $grey-dark;
   }
   
-  header {
+  .main_head {
     display: flex;
     flex-direction: column;
     background-image: url('./img/1560285.jpeg');
@@ -90,10 +91,6 @@ body {
     color: $white;
   }
   
-  h4 {
-      color: $white;
-  }
-  
   .icone {
     width: auto;
     height: 1em;
@@ -156,8 +153,20 @@ body {
     flex: 1;
   }
   
-  .project {
+  .subsection {
     display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-content: center;
+    }
+    div {
+      flex: 1;
+      margin: 0.5em;
+    }
   }
   
   
@@ -481,4 +490,27 @@ body {
   
   .green_shadow {
     background-color: #78a57f;
+  }
+
+  .techno {
+    display: flex;
+    flex-direction: row;
+    div {
+      border-radius: 5px;
+      text-align: center;
+      color: $white;
+      padding: 0.25em;
+    }
+    .techno_html {
+      background-color: orangered;
+    }
+    .techno_css {
+      background-color: #1e90ff;
+    }
+    .techno_sass {
+      background-color: #cf649a;
+    }
+    .techno_boot {
+      background-color: #7952b3;
+    }
   }

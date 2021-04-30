@@ -10,7 +10,7 @@ body {
   background-color: #2F3B4B;
 }
 
-header {
+.main_head {
   display: flex;
   flex-direction: column;
   background-image: url("./img/1560285.jpeg");
@@ -19,7 +19,7 @@ header {
   text-align: center;
 }
 
-header button {
+.main_head button {
   margin-bottom: 1em;
 }
 
@@ -85,10 +85,6 @@ h2 {
   color: #f2f2f2;
 }
 
-h4 {
-  color: #f2f2f2;
-}
-
 .icone {
   width: auto;
   height: 1em;
@@ -148,8 +144,22 @@ h4 {
   flex: 1;
 }
 
-.project {
+.subsection {
   display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.subsection header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.subsection div {
+  flex: 1;
+  margin: 0.5em;
 }
 
 ul {
@@ -463,5 +473,33 @@ img.hublot {
 
 .green_shadow {
   background-color: #78a57f;
+}
+
+.techno {
+  display: flex;
+  flex-direction: row;
+}
+
+.techno div {
+  border-radius: 5px;
+  text-align: center;
+  color: #f2f2f2;
+  padding: 0.25em;
+}
+
+.techno .techno_html {
+  background-color: orangered;
+}
+
+.techno .techno_css {
+  background-color: #1e90ff;
+}
+
+.techno .techno_sass {
+  background-color: #cf649a;
+}
+
+.techno .techno_boot {
+  background-color: #7952b3;
 }
 /*# sourceMappingURL=main.css.map */

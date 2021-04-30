@@ -10,7 +10,7 @@
     </head>
     
     <body>
-        <header>
+        <header class="main_head">
             <nav>
                 <a class="active" href="/index.html">Home</a>
                 <a href="#contact">Contact</a>
@@ -51,7 +51,7 @@
                 <div class="white_bg">
                     <ul>
                         <li>Paris, France</li>
-                        <li>leadieudonat@gmail.com</li>
+                        <li><a href="mailto: leadieudonat@gmail.com" target="_blank">leadieudonat@gmail.com</a></li>
                         <li>+33 6 61 63 98 82</li>
                     </ul>
                 </div>
@@ -97,49 +97,60 @@
 
             <section class="portfolio" id="portfolio">
                 <h2>Portfolio</h2>
-                <div class="project">
+                <div class="subsection">
                     <div class="white_bg">
                         <h3>Afpa website</h3>
-                        <p>Plateforme numérique responsive pour collecter les données des futurs stagiaires de l'AFPA. Technologies: HTML, CSS, Sass</p>
+                        <p>Plateforme numérique responsive pour collecter les données des futurs stagiaires de l'AFPA.</p>
+                        <div class="techno"><div class="techno_html">HTML</div><div class="techno_css">CSS3</div><div class="techno_sass">Sass</div></div>
                         <button><a href="https://leaddn.github.io/afpa/">Voir</a></button>
                     </div>
     
                     <div class="white_bg">
                         <h3>Myuka project</h3>
-                        <p>Scan de produits alimentaires pour identifier leur composition et leur impact sur la santé. Technologies: HTML, CSS, Sass</p>
+                        <p>Scan de produits alimentaires pour identifier leur composition et leur impact sur la santé.</p>
+                        <div class="techno"><div class="techno_html">HTML</div><div class="techno_css">CSS3</div><div class="techno_sass">Sass</div></div>
                         <button><a href="https://leaddn.github.io/myuka/">Voir</a></button>
                     </div>
 
                     <div class="white_bg">
                         <h3>Baloo's Kitchen</h3>
-                        <p>In french we say "Bon Appétit". Technologies: HTML, CSS, Boostrap4</p>
+                        <p>In french we say "Bon Appétit".</p>
+                            <div class="techno"><div class="techno_html">HTML</div><div class="techno_css">CSS3</div><div class="techno_sass">Sass</div><div class="techno_boot">Bootstrap</div></div>
                         <button><a href="./bootstrap/index.html">Voir</a></button>
                     </div>
                     
                 </div>
                 
             </section>
-        
-            <section class="tech_skills">
-                <img src="img/logo/skills.png" width="50">
-                <h2>Technical Skills</h2>
-                <ul>
-                    <li>Html5</li>
-                    <li>CSS3</li>
-                    <li>Javascript</li>
-                    <li>Php</li>
-                    <li>Python</li>
-                </ul>
-            </section>
-
-            <section class="tools">
-                <img src="img/logo/tools.png" width="50">
-                <h2>Tools</h2>
-                <ul>
-                    <li>Visual Studio</li>
-                    <li>Git</li>
-                    <li>Coffee</li>
-                </ul>
+            
+            <section class="skills">
+                <div class="subsection">
+                    <div class="white_bg">
+                        <header><h3>Design</h3></header>
+                        
+                        <h4>Technical skills</h4>
+                        <p>UI, UX, Web, Mobile, Apps</p>
+                        <h4>Tools</h4>
+                        <p>Figma</p>
+                    </div>
+                    <div class="white_bg">
+                        
+                        <header><div><img src="img/logo/skills.png" class="icone"></div><h3>Development</h3></header>
+                        <h4>Technical skills</h4>
+                        <div class="techno"><div class="techno_html">HTML</div><div class="techno_css">CSS3</div><div class="techno_sass">Sass</div><div class="techno_boot">Bootstrap</div></div>
+                        
+                        <p>Python, PHP, Javascript</p>
+                        <h4>Tools</h4>
+                        <p>VS Code, Atom, Github, Terminal, Codepen, Coffee ☕</p>
+                    </div>
+                    <div class="white_bg">
+                        <header><h3>Management</h3></header>
+                        <h4>Technical skills</h4>
+                        <p>???</p>
+                        <h4>Tools</h4>
+                        <p>Trello, Slack, Discord</p>
+                    </div>
+                </div>
             </section>
     
             <section class="languages">
@@ -333,6 +344,6 @@
     <footer>
         ©2021 Léa Dieudonat
     </footer>
-        <script src="./scripts/main.js"></script>
+    <!--<script src="./scripts/main.js"></script>-->
     </body>
 </html>
