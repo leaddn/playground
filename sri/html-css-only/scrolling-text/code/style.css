@@ -5,7 +5,9 @@
 }
 
 body {
-  /*height: 100vh;*/
+  /* l'unité vh permet aux éléments de s'adapter à la taille du viewport 
+  (viewport: taile de la fênêtre du navigateur)*/
+  /*height: 100vh; */
   height: auto;
   background-image: repeating-linear-gradient(
     135deg, rgb(93,93,93, 0.1) 0px, rbga(93,93,93, 0.1) 2px,
