@@ -12,31 +12,30 @@ body{
     linear-gradient(90deg, rgb(255, 255, 255), rgb(255,255,255));
 }
 
-
 /* horizontal animation */
-/* .container{
+.container{
   display: flex;
   overflow: hidden;
   width: 100%;
   position: absolute;
   top: 40%;
   transform: translateY(-50%);
-} */
+}
 
 /* vertical translation */
-.container{
+/* .container{
   display: flex;
   overflow: hidden;
   width: 100%;
   position: absolute;
   transform: rotate(90deg);
-}
+} */
 
 .txt {
   white-space: nowrap;
   font-size: 230px;
   /* animation: scrollTxt 25s linear infinite; */
-  animation: scrollTxtLeftRight 25s linear infinite;
+  animation: scrollTxt 25s linear infinite;
   
 }
 
@@ -69,9 +68,3 @@ start at left, ends at right */
     transform: translate(0,0);
   }
 }
-
-
-
-
-
-
