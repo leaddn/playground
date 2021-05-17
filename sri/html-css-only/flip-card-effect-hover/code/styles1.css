@@ -6,9 +6,8 @@
 
 body{
   font-family: Arial, Helvetica, sans-serif;
-  /* background: url("../../../images/freepick-background/leaves-background-with-metallic-foil/3907391.jpg") no-repeat; */
   background-size: cover;
-  background-color: burlywood ;
+  background-color: #e27396;
 
 }
 
@@ -51,7 +50,7 @@ body{
 }
 
 .back-card {
-  background-color: #2980b9;
+  background-color: #f26419;
   color: white;
   transform: rotateY(180deg);
 }
