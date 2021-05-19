@@ -1,3 +1,7 @@
+/*===============================================================================
+                                Variables
+================================================================================*/
+
 const cards = document.querySelectorAll('.card');
 
 let returnedCard = false;
@@ -8,6 +12,9 @@ cards.forEach(card => {
   card.addEventListener('click', cardReturned);
 })
 
+/*===============================================================================
+                          function cardReturned()
+================================================================================*/
 function cardReturned(){
   if(lock) {
     return;
@@ -16,18 +23,27 @@ function cardReturned(){
   if(!returnedCard){
     returnedCard = true;
     firstCard = this;
+
     return;
   }
   returnedCard = false;
   secondCard = this;
   // console.log(firstCard, secondCard)
   correspondance();
+
 }
 
+/*===============================================================================
+                          function correspondance()
+  This function, correspondance(), let the card returned.
+  That means each time we found the right combination, 
+  the cards do not flip back
+================================================================================*/
 function correspondance() {
   if(firstCard.getAttribute('data-attr') === secondCard.getAttribute('data-attr')){
     firstCard.removeEventListener('click',cardReturned);
     secondCard.removeEventListener('click',cardReturned);
+    // alert(`Great!, you find the right combination`);
   }
   else{
     lock = true;
@@ -38,8 +54,14 @@ function correspondance() {
       lock = false;
     }, 1000)
   }
+  
 }
 
+/*===============================================================================
+                          function randomSelectedCard()
+  This function shuffle the cards.
+  Each time we refresh the page, each card position change
+================================================================================*/
 function randomSelectedCard(){
   cards.forEach(card =>{
     let randomPos = Math.floor(Math.random() * 12);
@@ -48,3 +70,4 @@ function randomSelectedCard(){
 }
 
 randomSelectedCard();
+
