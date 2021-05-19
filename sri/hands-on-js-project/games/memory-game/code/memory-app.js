@@ -8,6 +8,19 @@ let returnedCard = false;
 let firstCard, secondCard;
 let lock= false;
 
+
+/*
+cards.forEach(function(currentValue))
+forEach prend en paramètre une fonction callback 
+et s'execute en lui passant chaque élément de la collection
+cards: est la collection
+card => {
+  card.addEventListener('click', cardReturned);
+}) : function callback
+
+*/
+
+
 cards.forEach(card => {
   card.addEventListener('click', cardReturned); /* écoute de l'évènement*/
 })
@@ -70,11 +83,11 @@ function correspondance() {
   
 }
 
-// /*===============================================================================
-//                           function randomSelectedCard()
-//   This function shuffle the cards.
-//   Each time we refresh the page, each card position change
-// ================================================================================*/
+/*===============================================================================
+                           function randomSelectedCard()
+  This function shuffle the cards.
+  Each time we refresh the page, each card position change
+================================================================================*/
 function randomSelectedCard(){
   cards.forEach(card =>{
     let randomPos = Math.floor(Math.random() * 12);
