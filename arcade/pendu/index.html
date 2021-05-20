@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendu</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.scss">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col text-center">
+        <h1>Hangman Game</h1>
+        <p>
+          Nous avons sélectionné un mot entre 14 et 16 lettres. 
+          Essayez de le deviner en 9 essais ou moins.
+          Vous disposez de 3 vies pour soumettre le mot final.
+      </p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <div id="word_guess"></div>
+        <br>
+        <div id="history"></div>
+        <div id="trial"></div>
+        <div id="life"></div>
+        <button id="guessButton">Submit</button>
+        
+        <!--<button onclick="myFunction()" id="start">Begin</button>-->
+        <button id="start">Begin</button>
+      </div>
+      <div class="col-lg-6">
+        <img id="hangman" src="">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div id="keyboard"></div>
+      </div>
+    </div>
+  </div>
+
+    
+    
+    
+    
+    <!--
+    <div class="resultParas">
+      <p class="guesses"></p>
+      <p class="lastResult"></p>
+      <p class="lowOrHi"></p>
+    </div>
+    -->
+    <script src="main_copy.js">
+
+    </script>
+</body>
+</html>

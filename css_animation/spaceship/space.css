@@ -1,0 +1,126 @@
+.background {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  background: radial-gradient(#23163E, black);
+}
+
+.circle {
+  display: flex;
+  border-style: dashed;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  border-color: #55C3DB;
+  border-width: 20px 5px;
+  animation-name: start;
+  animation-duration: 2s;
+}
+
+@keyframes start {
+  0% {
+    transform: rotate(-25deg);
+  }
+  50% {
+    transform: rotate(-50deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.sub-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  border-style: solid;
+  border-radius: 50%;
+  border-color: #013d6f9c;
+  border-width: 30px;
+}
+
+.sub-circle p {
+  color: #FFF;
+  text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #CB368B, 0 0 30px #CB368B, 0 0 40px #CB368B, 0 0 55px #CB368B, 0 0 75px #CB368B;
+}
+
+p {
+  color: #CB368B;
+}
+
+.box {
+  background-color: #013d6f9c;
+  width: 15em;
+  height: auto;
+}
+
+.sub-box {
+  background-color: #62C3E7;
+  border-radius: 5px;
+}
+
+.name {
+  background-color: rgba(255, 255, 255, 0.048);
+  color: #62C3E7;
+  text-shadow: 0px 4px 8px #62C3E7;
+}
+
+.stat {
+  color: #62C3E7;
+}
+
+.vl_group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.vl {
+  border-left: 6px, solid,white;
+  background-color: #62C3E7;
+  width: 10px;
+  height: 100px;
+  margin: 0.25em;
+}
+
+/*
+/* ball moving to the right with less opacity
+#ball {
+    width: 100px;
+    height: 100px;
+    margin: 50px auto;
+    position: fixed;
+    /*left: 20%;
+    border-radius: 50%;
+    background: linear-gradient(
+      35deg,
+      #ccffff,
+      #ffcccc
+    );
+    border: 3px, solid, black;
+    animation-name: bounce;
+    animation-duration: 1s;
+  }
+*/
+/*
+@keyframes bounce{
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 249px;
+    width: 130px;
+    height: 70px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+*/
+/*# sourceMappingURL=space.css.map */

@@ -1,0 +1,50 @@
+
+
+/* Animated rainbow rectangle */
+.rect {
+    height: 40px;
+    width: 50%;
+    background: black;
+    margin: 50px auto;
+    border-radius: 5px;
+  }
+
+#rect {
+    animation-name: rainbow;
+    animation-duration: 4s;
+
+  }
+
+  @keyframes rainbow {
+    0% {
+      background-color: blue;
+      top: 0px;
+      left: 25px;
+    }
+    50% {
+      background-color: green;
+      top: 50px;
+      left: 0px;
+    }
+    100% {
+      background-color: yellow;
+      top: 0px;
+      left: -25px;
+    }
+  }
+
+  /* icone that grows on hover */
+  .google {
+    width: 30px;
+  }
+  .google:hover {
+      animation-name: width;
+      animation-duration: 500ms;
+      animation-fill-mode: forwards;
+    }
+  
+    @keyframes width {
+      100% {
+        width: 40px;
+      }
+    }

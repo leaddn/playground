@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastermind</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="board">
+        <div class="line">
+            <div class="code">
+                <div class="code_circle"></div>
+                <div class="code_circle"></div>
+                <div class="code_circle"></div>
+                <div class="code_circle"></div>
+            </div>
+        </div>
+        <!--12th guess-->
+        <div class="bg_green line">
+            <div class="guess bg_pink">
+                <div class="guess_circle"></div>
+                <div class="guess_circle"></div>
+                <div class="guess_circle"></div>
+                <div class="guess_circle"></div>
+            </div>
+            <div class="point">
+                <div class="point_circle"></div>
+                <div class="point_circle"></div>
+                <div class="point_circle"></div>
+                <div class="point_circle"></div>
+            </div>
+        </div>
+        <!--11th guess-->
+        <div class="line">
+            <div class="guess">
+                <div class="guess_circle"></div>
+                <div class="guess_circle"></div>
+                <div class="guess_circle"></div>
+                <div class="guess_circle"></div>
+            </div>
+            <div class="point">
+                <div class="point_circle"></div>
+                <div class="point_circle"></div>
+                <div class="point_circle"></div>
+                <div class="point_circle"></div>
+            </div>
+        </div>
+        <!--10th guess-->
+        <div class="line">
+            <div class="guess">
+                <div class="guess_circle"></div>
+                <div class="guess_circle"></div>
+                <div class="guess_circle"></div>
+                <div class="guess_circle"></div>
+            </div>
+            <div class="point">
+                <div class="point_circle"></div>
+                <div class="point_circle"></div>
+                <div class="point_circle"></div>
+                <div class="point_circle"></div>
+            </div>
+        </div>
+        <!--9th guess-->
+        <div class="line">
+            <div class="guess">
+                <div class="guess_circle"></div>
+                <div class="guess_circle"></div>
+                <div class="guess_circle"></div>
+                <div class="guess_circle"></div>
+            </div>
+            <div class="point">
+                <div class="point_circle"></div>
+                <div class="point_circle"></div>
+                <div class="point_circle"></div>
+                <div class="point_circle"></div>
+            </div>
+        </div>
+        <!--8th guess-->
+        <div class="line">
+            <div class="guess">
+                <div class="guess_circle"></div>
+                <div class="guess_circle"></div>
+                <div class="guess_circle"></div>
+                <div class="guess_circle"></div>
+            </div>
+            <div class="point">
+                <div class="point_circle"></div>
+                <div class="point_circle"></div>
+                <div class="point_circle"></div>
+                <div class="point_circle"></div>
+            </div>
+        </div>
+        <!--7th guess-->
+        <div class="line">
+            <div class="guess">
+                <div class="guess_circle"></div>
+                <div class="guess_circle"></div>
+                <div class="guess_circle"></div>
+                <div class="guess_circle"></div>
+            </div>
+            <div class="point">
+                <div class="point_circle"></div>
+                <div class="point_circle"></div>
+                <div class="point_circle"></div>
+                <div class="point_circle"></div>
+            </div>
+        </div>
+        <!--6th guess-->
+        <div class="line">
+            <div class="guess">
+                <div class="guess_circle"></div>
+                <div class="guess_circle"></div>
+                <div class="guess_circle"></div>
+                <div class="guess_circle"></div>
+            </div>
+            <div class="point">
+                <div class="point_circle"></div>
+                <div class="point_circle"></div>
+                <div class="point_circle"></div>
+                <div class="point_circle"></div>
+            </div>
+        </div>
+        <!--5th guess-->
+        <div class="line">
+            <div class="guess">
+                <div class="guess_circle"></div>
+                <div class="guess_circle"></div>
+                <div class="guess_circle"></div>
+                <div class="guess_circle"></div>
+            </div>
+            <div class="point">
+                <div class="point_circle"></div>
+                <div class="point_circle"></div>
+                <div class="point_circle"></div>
+                <div class="point_circle"></div>
+            </div>
+        </div>
+        <!--4th guess-->
+        <div class="line">
+            <div class="guess">
+                <div class="guess_circle"></div>
+                <div class="guess_circle"></div>
+                <div class="guess_circle"></div>
+                <div class="guess_circle"></div>
+            </div>
+            <div class="point">
+                <div class="point_circle"></div>
+                <div class="point_circle"></div>
+                <div class="point_circle"></div>
+                <div class="point_circle"></div>
+            </div>
+        </div>
+        <!--3rd guess-->
+        <div class="line">
+            <div class="guess">
+                <div class="guess_circle"></div>
+                <div class="guess_circle"></div>
+                <div class="guess_circle"></div>
+                <div class="guess_circle"></div>
+            </div>
+            <div class="point">
+                <div class="point_circle"></div>
+                <div class="point_circle"></div>
+                <div class="point_circle"></div>
+                <div class="point_circle"></div>
+            </div>
+        </div>
+        <!--2nd guess-->
+        <div class="line">
+            <div class="guess">
+                <div class="guess_circle"></div>
+                <div class="guess_circle"></div>
+                <div class="guess_circle"></div>
+                <div class="guess_circle"></div>
+            </div>
+            <div class="point">
+                <div class="point_circle"></div>
+                <div class="point_circle"></div>
+                <div class="point_circle"></div>
+                <div class="point_circle"></div>
+            </div>
+        </div>
+        <!--1st guess-->
+        <div class="line" id="line1">
+            <div class="guess" id="guess1">
+                <div class="guess_circle" id="guess1_circle1"></div>
+                <div class="guess_circle" id="guess1_circle2"></div>
+                <div class="guess_circle" id="guess1_circle3"></div>
+                <div class="guess_circle" id="guess1_circle4"></div>
+            </div>
+            <div class="point">
+                <div class="point_circle" id="guess1_point1"></div>
+                <div class="point_circle" id="guess1_point2"></div>
+                <div class="point_circle" id="guess1_point3"></div>
+                <div class="point_circle" id="guess1_point4"></div>
+            </div>
+        </div>
+        <div class="line" id="palette">
+            <!--<div class="palette_circle" id="palette1" onclick="changeColor(guess_circle,'#palette1')">green</div>-->
+            <div class="palette_circle" id="palette1" onclick="getFocus()">green</div>
+            <!--<div class="palette_circle" id="palette1" onclick="circle1.changeColor()">green</div>-->
+            <div class="palette_circle" id="palette2" onclick="changeColor('#palette2')">blue</div>
+            <div class="palette_circle" id="palette3" onclick="changeColor('#palette3')">pink</div>
+            <div class="palette_circle" id="palette4" onclick="changeColor('#palette4')">yellow</div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
