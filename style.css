@@ -3,4 +3,12 @@ body {
   height: 100%;
   width: 100%;
 }
+
+.card {
+  width: fit-content;
+}
+
+.card img {
+  height: 10em;
+}
 /*# sourceMappingURL=style.css.map */

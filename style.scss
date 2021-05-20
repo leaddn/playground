@@ -5,3 +5,10 @@ body {
   height: 100%;
   width: 100%;
 }
+
+.card {
+  width: fit-content;
+  img {
+    height: 10em;
+  }
+}
