@@ -55,7 +55,19 @@ body {
   background-color: #bbb;
   color: white;
   transform: rotateY(180deg);
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+.info-text {
+  text-align: left;
+  i {
+    margin-right: 0.5em;
+  }
+  }
 
 .sharebuttons_container {
   display: flex;
