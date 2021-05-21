@@ -1,7 +1,10 @@
 var board = document.getElementById("board");
 var palette = document.getElementById("palette");
 const color_list = ["#0278ee", "#dd0174", "#ff913f", "#01ee78", "#7952b3"];
-var length = 10;
+var turn = 10;
+rowIncrement = 1;
+var line_list = [];
+var guess = [];
 /* ======================================= */
 
 /*Create a number of lines corresponding to the number of guess the player can play */
@@ -10,13 +13,15 @@ function lineToSpace(k) {
     line_space.setAttribute("class", "line");
     line_space.setAttribute("id", "line_"+k);
     board.appendChild(line_space);
+    line_list.push(line_space);
+    return line_list;
 }
 
 /* Create a space per line where player can display color codes */
 function guessToSpace(j) {
     var guess_space = document.createElement("div");
     guess_space.setAttribute("class", "guess_space");
-    console.log(j);
+    
     document.getElementsByClassName("line")[j].appendChild(guess_space);
     for (var i in color_list) {
         circleToGuess(guess_space,j,i);
@@ -40,6 +45,7 @@ function circleToPalette(color) {
     circle_palette.setAttribute("id", color);
     circle_palette.setAttribute("class", "circle");
     circle_palette.style.backgroundColor = color;
+    circle_palette.onclick = function() {insertGuess(color)};
     palette.appendChild(circle_palette);
 }
 
@@ -59,6 +65,20 @@ function circleToPoint(element) {
     element.appendChild(circle_point);
 }
 
+function insertGuess(color) {
+    var slots = line_list[line_list.length - rowIncrement].getElementsByClassName('guess_circle');
+    //console.log(slots);
+    slots[guess.length].style.background = color;
+    guess.push(color);
+    
+    if (guess.length === 5) { // this doesn't work. Try to find the good way to go up through rows
+        rowIncrement += 1;
+    }
+    //if ()
+
+}
+
+
 function focusFunction(element) {
     //element.style.backgroundColor = "pink";
     element.className += " " + "blinking";
@@ -69,32 +89,46 @@ function focusFunction(element) {
 function blurFunction(element, color) {
     // No focus = Changes the background color of input to red
     element.style.background = color;
-    element.blur();
+    //element.blur();
   }
 
 /* ====================================== */
 
-for (var x = length; x >= 0; x--) {
-    lineToSpace(x);
-    guessToSpace(j=length-x);
-    pointToSpace(j=length-x);
+for (var x = 0; x <= turn; x++) {
+    line_list = lineToSpace(x);
+    //guessToSpace(j=turn-x);
+    //pointToSpace(j=turn-x);
+    guessToSpace(x);
+    pointToSpace(x);
 }
-
+console.log(line_list.length);
 for (var i in color_list) {
     circleToPalette(color_list[i]);
 }
 
+//insertGuess();
+
+
+
+//clr = "green";
+//elem = document.getElementById("line_0_cc_0");
+//elem.addEventListener("focus", focusFunction(elem), true);
+//elem.addEventListener("blur", blurFunction(elem, clr), true);
 //window.onload = focusFunction(document.getElementById("line_0_cc_0"));
-document.getElementById("line_0_cc_0").onclick = function() {focusFunction(document.getElementById("line_0_cc_0"))};
+//document.getElementById("line_0_cc_0").onclick = function() {focusFunction(document.getElementById("line_0_cc_0"))};
 
 /*
 for (var i in color_list) {
     var color = color_list[i];
     var color_btn = document.getElementById(color);
+    color_btn.onclick = function() {insertGuess(color)};
+    // Add event listener to every code option button
+    //color_btn.addEventListener('click', insertGuess(color), false);
     
 }
 */
-var color = color_list[0];
-var color_btn = document.getElementById(color);
-color_btn.onclick = function() {blurFunction(document.getElementById("line_0_cc_0"), color)};
+
+//var color = color_list[0];
+//var color_btn = document.getElementById(color);
+//color_btn.onclick = function() {blurFunction(document.getElementById("line_0_cc_0"), color)};
 

@@ -1,15 +1,18 @@
 body {
   background-color: #2C2C4D;
+  height: 100%;
+  width: 100%;
 }
 
 #board {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 60%;
 }
 
 .board {
-  width: 50%;
+  height: 100%;
 }
 
 .margin {
@@ -17,6 +20,7 @@ body {
 }
 
 #palette {
+  height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -32,12 +36,14 @@ body {
 
 .line {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: row;
-  margin: 0.5em;
+  margin: 0.15em;
   border: 1px solid #14A4A0;
   border-radius: 5px;
-  height: 4em;
+  height: fit-content;
+  padding: 0.15em;
+  align-items: center;
   /*
     .guess {
         @include line_circle();
@@ -56,16 +62,16 @@ body {
 }
 
 .guess_space {
-  width: 50%;
+  width: 70%;
   height: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
 .point_space {
-  width: 25%;
+  width: 20%;
   height: 100%;
   display: flex;
   flex-direction: row;
@@ -74,22 +80,22 @@ body {
 }
 
 .circle {
-  width: 50px;
-  height: 50px;
-  border-radius: 25px;
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
 }
 
 .guess_circle {
-  width: 50px;
-  height: 50px;
-  border-radius: 25px;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
   background: #68615A;
 }
 
 .point_circle {
-  width: 25px;
-  height: 25px;
-  border-radius: 25px;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
   background: #68615A;
 }
 
