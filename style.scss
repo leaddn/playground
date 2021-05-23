@@ -1,4 +1,43 @@
-$color1: #34568B;
+$color1: #264653;
+$color1b: #88A2AA;
+//$color1: #34568B;
+//$color1: #023047;
+$color2: #2A9D8F;
+$color3: #8ECAE6;
+$color4: #E9C46A;
+$color5: #F4A261;
+$color6: white;
+
+.bg-color1b {
+  background-color: $color1b;
+}
+.bg-color6 {
+  background-color: $color6;
+}
+
+a {
+  text-decoration: none;
+}
+
+h3 {
+  color: $color4;
+}
+
+.text-color2 {
+  color: $color2;
+}
+.text-color3 {
+  color: $color3;
+}
+.text-color4 {
+  color: $color4;
+}
+.text-color5 {
+  color: $color5;
+}
+.text-color6 {
+  color: $color6;
+}
 
 body {
   background-color: $color1;
@@ -15,8 +54,8 @@ body {
 
 .middle-card{
   background-color: transparent;
-  width: 15em;
-  height: 20em;
+  width: 18em;
+  height: 25em;
   //position: absolute;
   //top: 50%;
   //left: 50%;
@@ -47,12 +86,13 @@ body {
 }
 
 .front-card {
-  background-color: #bbb;
+  //background-color: #bbb;
+  background-color: $color2;
   color: black;
 }
 
 .back-card {
-  background-color: #bbb;
+  background-color: $color2;
   color: white;
   transform: rotateY(180deg);
   padding: 1em;
@@ -60,12 +100,24 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  a {
+    text-decoration: none;
+    color: $color6;
+    &:hover {
+      color: black;
+    }
+  }
 }
 
 .info-text {
+  color: $color6;
   text-align: left;
   i {
     margin-right: 0.5em;
+  }
+  a {
+    text-decoration: none;
+    color: $color6;
   }
   }
 

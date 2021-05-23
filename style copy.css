@@ -1,0 +1,115 @@
+h1 {
+  color: white;
+  font-size: 4em;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  font-size: 3em;
+  text-align: center;
+}
+
+body {
+  height: auto;
+  width: 100%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container {
+  width: 100%;
+  background: #34568B;
+  display: grid;
+}
+
+button {
+  background-color: white;
+  color: black;
+  overflow: hidden;
+  border-radius: 5px;
+  display: inline-block;
+  text-decoration: none;
+  padding: 1em 0em;
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  width: fit-content;
+}
+
+button a {
+  color: black;
+  border: none;
+  text-decoration: none;
+  padding: 1em 1em;
+  font-size: 2em;
+  text-align: center;
+}
+
+button a:hover {
+  background-color: black;
+  color: white;
+}
+
+.background {
+  background-color: #34568B;
+  animation: background 5s 1;
+  /* CSS3 */
+}
+
+section {
+  width: 100%;
+  display: flex;
+}
+
+.section1 {
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer {
+  background-color: #A0DAA9;
+  font-size: 1.5em;
+  padding: 1em 1em;
+  margin-bottom: 0%;
+  height: fit-content;
+  text-align: center;
+  width: 100%;
+}
+
+@keyframes background {
+  /* CSS3 */
+  0%, 50% {
+    top: 0%;
+    bottom: 0%;
+    background: black;
+  }
+  100% {
+    top: 500%;
+    left: 0%;
+    background: #34568B;
+  }
+}
+
+.sun {
+  background: #EFC050;
+  width: 3em;
+  height: 3em;
+  border-radius: 80%;
+  animation: move 5s 1;
+  position: relative;
+  margin-left: 5em;
+}
+
+/* Typing effect */
+/*
+@keyframes move { 
+    0%, 50% {top:20em; left:0em;}
+    100% {top:0em; left:0em;}
+}
+
+
+.typewriter h2 {
+    //overflow: hidden; /* Ensures the content is not revealed until the animation */
+/* The typing effect */
+/* The typewriter cursor effect */
+/*# sourceMappingURL=style copy.css.map */
