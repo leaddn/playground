@@ -1,10 +1,3 @@
-/* Notification Sound */
-
-
-
-
-
-
 /* Random Picture */
 
 window.onload = choosePic;
@@ -32,6 +25,7 @@ let guessCount = 1;
 let resetButton;
 guessField.focus();
 
+/* the game main function */
 function checkGuess(){
     let userGuess = Number(guessField.value);
     if (guessCount === 1) {
@@ -67,6 +61,7 @@ function checkGuess(){
 
   guessSubmit.addEventListener('click', checkGuess);
 
+  /* initialize end game */
   function setGameOver() {
     guessField.disabled = true;
     guessSubmit.disabled = true;
@@ -76,6 +71,7 @@ function checkGuess(){
     resetButton.addEventListener('click', resetGame);
   }
 
+  /* initialize game restart */
   function resetGame() {
     guessCount = 1;
   
