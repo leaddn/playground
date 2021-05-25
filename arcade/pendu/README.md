@@ -3,7 +3,6 @@
 ## Etapes :
 
 - Générer un mot aléatoire d'une liste de mots de 14 ou 16 lettres.
---> Les lettres du mot sont cachées (hidden?)
 - Stocker le nombre de tours déjà joués. Commencer par 1, jusqu'à 9 tentatives.
 - Fournir au joueur le moyen de saisir des lettres: Le jeu affiche les lettres de l'alphabet sous forme de bouton contenant chaque lettre.
 - Stocker l'ensemble des propositions de lettres pour que le joueur puisse les consulter.
@@ -26,3 +25,14 @@
         - Informer le joueur qu'il a gagné
         - Afficher un contrôle pour que le joueur puisse rejouer.
 - Une fois le jeu redémarré, s'assurer que la logique du jeu et l'interface utilisateur sont complètement réinitialisées, puis revenir à l'étape 1.
+
+## Améliorations futures
+- Ajouter un son lors d'une victoire ou d'une défaite
+- Permettre au joueur de taper sur son clavier d'ordinateur
+- Créer un mode de jeu un contre un
+- Agrandir la liste de mots et possibilité de choisir un thème
+
+## Règles
+Le joueur peut gagner de deux manières:
+- soit en trouvant toutes les lettres du mot en 10 essais ou moins
+- soit en soumettant le mot à l'aide du bouton "submit" en 3 essais ou moins

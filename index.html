@@ -13,9 +13,18 @@
 
         <!-- Font awesome -->
         <script src="https://kit.fontawesome.com/eaf337826d.js" crossorigin="anonymous"></script>
+
+        <!--Jquery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+              $("#btn-game1").addClass("animated");
+            });
+            </script>
     </head>
 
     <body>
+
         <!-- Header -->
         <div class="container-fluid">
             <div class="row">
@@ -62,18 +71,18 @@
               
             <div class="row">
                 <div class="col-lg-4 card">
-                        <h4 class="card-title">Breakout</h4>
-                        <a class="btn btn-dark" href="./arcade/breakout/index.html" class="text-color6">Play !</a>
-                    
+                        <h4 id="title-game1" class="card-title">Breakout</h4>
+                        <a id="btn-game1" class="btn btn-dark btn-game text-color6" href="#">Play !</a>
+                        <!--href="./arcade/breakout/index.html"-->
                     
                 </div>
                 <div class="col-lg-4 card">
                     <h4 class="card-title">Juste Prix</h4>
-                    <a class="btn btn-dark" href="./arcade/juste prix/index.html" class="text-color6">Play !</a>
+                    <a class="btn btn-dark btn-game" href="./arcade/juste prix/index.html" class="text-color6">Play !</a>
                 </div>
                 <div class="col-lg-4 card">
                     <h4 class="card-title">Hangman</h4>
-                    <a class="btn btn-dark" href="./arcade/pendu/index.html" class="text-color6">Play !</a>
+                    <a class="btn btn-dark btn-game" href="./arcade/pendu/index.html" class="text-color6">Play !</a>
                 </div>
             </div>
         </section>
