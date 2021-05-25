@@ -1,4 +1,4 @@
-$color1: #264653;
+$color1: #2B355F;
 $color1b: #88A2AA;
 //$color1: #34568B;
 //$color1: #023047;
@@ -7,6 +7,9 @@ $color3: #8ECAE6;
 $color4: #E9C46A;
 $color5: #F4A261;
 $color6: white;
+
+$radius: 5px; 
+$shadow: 1px 1px 15px 5px #3C4A84;
 
 .bg-color1b {
   background-color: $color1b;
@@ -19,10 +22,24 @@ a {
   text-decoration: none;
 }
 
-h3 {
-  color: $color4;
+h1 {
+  text-shadow: 2px 2px 2px $color2;
 }
-
+h2 {
+  color: $color6;
+  margin-top: 1em;
+}
+h4 {
+  color: $color6;
+}
+hr {
+  width: 2em;
+    height: 0.5em;
+    text-align: left;
+    background-color: $color2;
+    border: none;
+    margin: 0px;
+}
 .text-color2 {
   color: $color2;
 }
@@ -40,12 +57,14 @@ h3 {
 }
 
 body {
-  background-color: $color1;
+  background: linear-gradient(302deg, rgba(2,0,36,1) 43%, rgba(43,53,95,1) 94%, rgba(43,53,95,0.8897934173669468) 100%);
   height: 100%;
   width: 100%;
 }
 
 .arcade-card {
+  background-color: $color1;
+  box-shadow: $shadow;
   width: fit-content;
   height: 10em;
   margin: 0.5em;
@@ -54,6 +73,7 @@ body {
 
 .face-card {
   width: fit-content;
+  
   img {
     height: 10em;
   }
@@ -85,6 +105,7 @@ body {
 }
 
 .front-card, .back-card {
+  border-radius: $radius;
   position: absolute;
   width: 100%;
   height: 100%;
