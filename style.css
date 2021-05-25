@@ -40,11 +40,18 @@ body {
   width: 100%;
 }
 
-.card {
+.arcade-card {
+  width: fit-content;
+  height: 10em;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+.face-card {
   width: fit-content;
 }
 
-.card img {
+.face-card img {
   height: 10em;
 }
 
