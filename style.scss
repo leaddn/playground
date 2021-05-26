@@ -79,6 +79,16 @@ body {
   padding: 0.5em;
 }
 
+#arcade-card1 {
+  background: url(./img/wave.svg) bottom center no-repeat;
+}
+#arcade-card2 {
+  background: url(./img/wave.svg) bottom center no-repeat;
+}
+#arcade-card3 {
+  background: url(./img/wave.svg) bottom center no-repeat;
+}
+
 .face-card {
   width: fit-content;
   box-shadow: $shadow;
