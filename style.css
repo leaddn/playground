@@ -6,6 +6,10 @@
   background-color: white;
 }
 
+.bg-color4 {
+  background-color: #DC8832;
+}
+
 a {
   text-decoration: none;
 }
@@ -15,12 +19,7 @@ h1 {
 }
 
 h2 {
-  color: white;
   margin-top: 1em;
-}
-
-h4 {
-  color: white;
 }
 
 hr {
@@ -41,7 +40,7 @@ hr {
 }
 
 .text-color4 {
-  color: #E9C46A;
+  color: #DC8832;
 }
 
 .text-color5 {
@@ -56,12 +55,19 @@ body {
   background: linear-gradient(302deg, #020024 43%, #2b355f 94%, rgba(43, 53, 95, 0.889793) 100%);
   height: 100%;
   width: 100%;
+  color: white;
+}
+
+.arcade, .team {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .arcade-card {
-  background-color: #2B355F;
+  background-color: #013d6f9c;
   box-shadow: 1px 1px 15px 5px #3C4A84;
-  width: fit-content;
+  width: 100%;
   height: 10em;
   margin: 0.5em;
   padding: 0.5em;
@@ -69,6 +75,7 @@ body {
 
 .face-card {
   width: fit-content;
+  box-shadow: 1px 1px 15px 5px #3C4A84;
 }
 
 .face-card img {
