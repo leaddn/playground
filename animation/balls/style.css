@@ -13,7 +13,7 @@
     );
     animation-name: bounce;
     animation-duration: 1s;
-    animation-iteration-count: infinite; /*chanhe this if you want to stop the ball*/
+    animation-iteration-count: infinite; /*change this if you want to stop the ball*/
   }
   
 
