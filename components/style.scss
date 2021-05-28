@@ -1,0 +1,52 @@
+/* Colors */
+$white: #FFFFFF;
+$grey: #485550;
+$grey-light: #F4F6F0;
+$shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+/* general properties */
+.no_border {
+    border: none;
+}
+
+.shadow {
+    box-shadow: $shadow;
+}
+
+/* form properties */
+fieldset {
+    border: none;
+    box-shadow: $shadow;
+    padding: none;
+    background-color: $white;
+}
+
+.info_form {
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    i {
+        margin: 0em 1em 0em 0em;
+    }
+    input,#msg {
+    height: 2em;
+    width: 50%;
+    &:hover {
+        background-color: $grey-light;
+    }
+    }
+    #msg {
+        height: 3em;
+    }
+    hr {
+        background-color: $grey;
+        width: 50%;
+        margin-left: 0%;
+        margin-top: 0%;
+    }
+    label,input[type="submit"] {
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+    }
+}

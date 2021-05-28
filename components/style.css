@@ -1,0 +1,54 @@
+/* Colors */
+/* general properties */
+.no_border {
+  border: none;
+}
+
+.shadow {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+/* form properties */
+fieldset {
+  border: none;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  padding: none;
+  background-color: #FFFFFF;
+}
+
+.info_form {
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.info_form i {
+  margin: 0em 1em 0em 0em;
+}
+
+.info_form input, .info_form #msg {
+  height: 2em;
+  width: 50%;
+}
+
+.info_form input:hover, .info_form #msg:hover {
+  background-color: #F4F6F0;
+}
+
+.info_form #msg {
+  height: 3em;
+}
+
+.info_form hr {
+  background-color: #485550;
+  width: 50%;
+  margin-left: 0%;
+  margin-top: 0%;
+}
+
+.info_form label, .info_form input[type="submit"] {
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+}
+/*# sourceMappingURL=style.css.map */
