@@ -140,3 +140,72 @@ body {
   i.fa-step-backward {
     cursor: pointer;
   }
+
+  /* ======================== Buttons ======================= */
+  .shadow1 {
+    box-shadow: 28px 28px 50px 1em rgba($color: #0D2750, $alpha: 0.16), 
+    -23px -23px 45px 0.5em #FFFFFF;
+}
+
+
+.shadow2 {
+    box-shadow: inset -15px -15px 15px 0.5em rgba($color: #FFFFFF, $alpha: 0.5), 
+    inset 15px 15px 15px 0 rgba($color: #0D2750, $alpha: 0.3);
+}
+
+.shadow3 {
+    box-shadow: 28px 28px 50px 1em rgba($color: #0D2750, $alpha: 0.16), 
+    -23px -23px 45px 0.5em #FFFFFF,
+    inset -15px -15px 15px 0.5em rgba($color: #FFFFFF, $alpha: 0.5), 
+    inset 15px 15px 15px 0 rgba($color: #0D2750, $alpha: 0.3);
+}
+
+.medium-circle {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle {
+        border-radius: 50%;
+        width: 2em;
+        height: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    
+.wave {
+  //box-shadow: $shadow1;
+  background: url(./img/svg/wave1.svg) bottom center no-repeat;
+  background-size: 25em;
+    /* blur effect */
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+    //#elem2 {
+        //background-color: #FFFFFF;
+    //}
+
+.shadow-square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.glass-square {
+    //background-color: rgb(255, 255, 255); /* Fallback color */
+    background-color: rgba(212, 212, 212, 0.4); /* Black w/opacity/see-through */
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    //height: 50%;
+    //width: 50%;
+    border-radius: 20px;
+    padding: 1em;
+    //position: absolute;
+    //z-index: 2;
+    box-shadow: inset 0px 0px 20px 5px #FFFFFF, 
+    28px 28px 50px 1em rgba($color: #0D2750, $alpha: 0.16), 
+    -23px -23px 45px 0.5em #FFFFFF;
+}
