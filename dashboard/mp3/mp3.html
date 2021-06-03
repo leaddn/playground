@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!--Font awesome icons-->
+    <script src="https://kit.fontawesome.com/eaf337826d.js" crossorigin="anonymous"></script>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="mp3.css">
+</head>
+<body>
+
+
+    <!-- Content -->
+    <div class="container audio-container">
+        <div class="row">
+            <div class="col-12">
+                <div id="audioMeta" class="card border-0">
+                    <div class="card-body">
+                        <div class="now-playing">Playing x of y</div>
+                        <img class="track-art">
+                    </div>
+                    <div class="card-title">
+                        <div class="track-title">Song</div>
+                        <div class="track-author">Artist</div>
+                    </div>
+                    
+                </div>
+        
+                <!--Track buttons -->
+                <div class="track-buttons">
+                    <div class="prev-track" onclick="prevTrack()">
+                        <i class="fa fa-step-backward"></i>
+                      </div>
+                      <div class="playpause-track" onclick="playpauseTrack()">
+                        <i class="fa fa-play"></i>
+                      </div>
+                      <div class="next-track" onclick="nextTrack()">
+                        <i class="fa fa-step-forward"></i>
+                      </div>
+                </div>   
+                
+                <div class="sliders">
+                    <!-- seek slider-->
+                    <div class="slider_container">
+                        <div class="current-time">00:00</div>
+                        <input type="range" min="1" max="100"
+                        value="0" class="seek_slider" onchange="seekTo()">
+                        <div class="total-duration">00:00</div>
+                    </div>
+            
+                    <!-- volume slider-->
+                    <div class="slider_container">
+                        <i class="fa fa-volume-down"></i>
+                        <input type="range" min="1" max="100"
+                        value="99" class="volume_slider" onchange="setVolume()">
+                        <i class="fa fa-volume-up"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        
+      
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2021 Copyright:
+            <a class="text-white">Léa Dieudonat</a>
+          </div>
+          <!-- Copyright -->
+    </footer>
+
+    <!-- JS -->
+        <script src="mp3_copy.js"></script>
+    <!-- jQuery, Popper.js, Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
