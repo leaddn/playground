@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
 $background : #C4C4C4;
 
 body {
@@ -5,6 +6,7 @@ body {
    
     /* Smoothly transition the background color */
     transition: background-color .5s;
+    font-family: "Odibee Sans", cursive;
     //background-color: $background;
   }
    

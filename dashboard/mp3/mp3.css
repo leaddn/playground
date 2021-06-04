@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap");
 body {
   /* Smoothly transition the background color */
   transition: background-color .5s;
+  font-family: "Odibee Sans", cursive;
 }
 
 /* Using flex with the column direction to
